@@ -179,8 +179,8 @@ figure {
 
 @media screen and (max-width: 768px) {
   .fh5co-cover {
-    /* height: inherit; */
-    height: 50vh;
+    height: inherit;
+    /* height: 50vh; */
     padding: 3em 0;
     background-position: center center;
     background-size: cover;
