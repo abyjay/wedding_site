@@ -182,8 +182,9 @@ figure {
     height: inherit;
     /* height: 50vh; */
     padding: 3em 0;
-    background-position: center center;
-    background-size: cover;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-attachment: scroll !important;
   }
 }
 
