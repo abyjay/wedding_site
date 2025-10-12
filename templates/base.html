@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>AbyJay</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Template by FREEHTML5.CO" />
+	<meta name="keywords" content="free html5, free template, free bootstrap, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FREEHTML5.CO" />
+
+  <!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	
+	<link href="https://fonts.googleapis.com/css?family=Montez" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/animate.css') }}">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/icomoon.css') }}">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+	<!-- Superfish -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/superfish.css') }}">
+	<!-- Magnific Popup -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/magnific-popup.css') }}">
+	
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+	<!-- Modernizr JS -->
+	<script src="{{ url_for('static', filename='js/modernizr-2.6.2.min.js') }}"></script>
+
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+	
+
+<body>
+    <div id="fh5co-wrapper">
+      <div id="fh5co-page">
+		
+        <header id="fh5co-header-section" class="sticky-banner">
+			<div class="container">
+				<div class="nav-header">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle dark"><i></i></a>
+					<h1 id="fh5co-logo"><a href="{{ url_for('home') }}"> <span> <img src="{{ url_for('static', filename='favicon.ico') }}" width="30px"> </span> AbyJay</a></h1>
+					<!-- START #fh5co-menu-wrap -->
+					<nav id="fh5co-menu-wrap" role="navigation">
+						<ul class="sf-menu" id="fh5co-primary-menu">
+							<li class="active"><a href="{{ url_for('home') }}" >Home</a></li>
+							<li class="active"><a href="{{ url_for('invitation') }}" >Invitation</a></li>
+							<li class="active"><a href="{{ url_for('rsvp') }}" >RSVP</a></li>
+							<!-- <li>
+								<a href="groom-bride.html" class="fh5co-sub-ddown">Groom &amp; Bride</a>
+								<ul class="fh5co-sub-menu">
+									<li><a href="#">Dropdown Menu 1</a></li>
+									<li><a href="#">Dropdown Menu 2</a></li>
+									<li><a href="#">Dropdown Menu 3</a></li>
+									<li><a href="#">Dropdown Menu 4</a></li>
+								</ul>
+							</li>
+							<li><a href="when-where.html">When &amp; Where</a></li>
+							<li><a href="guest.html">Guest</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="blog.html">Blog</a></li> -->
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+        {% block content %}
+        {% endblock %}
+		<div id="fh5co-countdown">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2 text-center animate-box">
+					<p class="countdown">
+						<span id="days"></span>
+						<span id="hours"></span>
+						<span id="minutes"></span>
+						<span id="seconds"></span>
+					</p>
+					<p id="demo" style="display:none;"></p>
+				</div>
+			</div>
+		</div>
+		{% block form %}
+		{% endblock %}
+      </div>
+    </div>
+
+	<footer>
+		<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<h2>Abeni &amp; Jay</h2>
+						<p>We cannot wait to celebrate with you.</p>
+						<p>Acasia Villa, Mapusa &mdash; Goa<br>Contact: <a href="tel:+919850067788" style="color:#fff;">+91 98500 67788</a></p>
+					</div>
+					<!-- <div class="col-md-6 col-md-offset-3 text-center">
+						<p class="fh5co-social-icons">
+							<a href="#"><i class="icon-twitter2"></i></a>
+							<a href="#"><i class="icon-facebook2"></i></a>
+							<a href="#"><i class="icon-instagram"></i></a>
+							<a href="#"><i class="icon-dribbble2"></i></a>
+							<a href="#"><i class="icon-youtube"></i></a>
+						</p> -->
+						<p>Copyright 2016 Free Html5 <a href="{{ url_for('home') }}">Module</a>. All Rights Reserved. <br>Made with <i class="icon-heart3"></i> by <a href="http://freehtml5.co/" target="_blank">Freehtml5.co</a> / Demo Images: <a href="https://unsplash.com/" target="_blank">Unsplash</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="{{ url_for('static', filename='dist/scripts.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/rsvp.js') }}"></script>
+  </body>
+</html>

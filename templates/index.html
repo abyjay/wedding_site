@@ -1,0 +1,85 @@
+
+{% extends 'base.html' %}
+
+{% block content %}	
+		<div class="fh5co-hero" data-section="home">
+			<div class="fh5co-overlay"></div>
+			<div class="fh5co-cover text-center background-image-center" data-stellar-background-ratio="0.1" style="background-image: url('{{ url_for('static', filename='images/main-cover.jpg') }}');">
+				<div class="display-t">
+					<div class="display-tc">
+						<div class="container">
+							<div class="col-md-10 col-md-offset-1">
+								<div class="animate-box">
+									<h2>Abeni &amp; Jay</h2>
+									<p><span>28<sup>th</sup> December 2025</span></p>
+									<h3 style="color: white;">Goa, India</h3>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
+		<!-- end:header-top -->
+		
+		<!-- <div id="fh5co-couple" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row row-bottom-padded-md animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<img src="images/groom.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<h3>Jack Wood</h3>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><i class="icon-heart"></i></h2></div>
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<img src="images/bride.jpg" class="img-responsive" alt="Free HTML5 Bootstrap Template by FreeHTML5.co">
+							<h3>Rose Thomas</h3>
+						</div>
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-12 text-center heading-section">
+							<h2>We Are Getting Married</h2>
+							<p><strong>on Dec 28, 2025 &mdash; Goa, India</strong></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+		
+		{% block form %}
+		<div id="fh5co-couple" class="fh5co-section-gray">
+			<div class="container">
+				<div class="row row-bottom-padded-md animate-box">
+					<div class="col-md-6 col-md-offset-3 text-center">
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<h3>Abeni</h3>
+							<!-- <img src="{{ url_for('static', filename='images/bride.jpg') }}" class="img-responsive"> -->
+							<p>Hi, I’m Abeni! I love exploring new places, capturing memories through photos and finding beauty in the little things. Music is a big part of my life — whether singing or just listening to songs that make me smile. I enjoy traveling, painting, playing the piano and spending quiet evenings watching movies or chatting about anything and everything. I believe in kindness, laughter, and making every day a little more meaningful.</p>
+						</div>
+						<div class="col-md-2 col-sm-2 col-xs-2 nopadding"><h2 class="amp-center"><i class="icon-heart"></i></h2></div>
+						<div class="col-md-5 col-sm-5 col-xs-5 nopadding">
+							<h3>Jay</h3>
+							<!-- <img src="{{ url_for('static', filename='images/groom.jpg') }}" class="img-responsive"> -->
+							<p>Hi, I’m Jay! I love working with robots and exploring how technology can make life more interesting. When I’m not geeking out over AI or building something new, you’ll probably find me watching anime, talking about space, time, and physics or experimenting in the kitchen. I really enjoy cooking and trying out new recipes. I’m curious about everything, love good conversations and believe life’s best moments are the ones shared with people you care about.</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="row animate-box">
+					<div class="col-md-8 col-md-offset-2">
+						<div class="col-md-12 text-center heading-section">
+							<h2>Are Getting Married</h2>
+							<!-- <p><strong>on Dec 28, 2017 &mdash; Boracay, Philippines</strong></p> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Google Map -->
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> -->
+	<!-- jQuery -->
+{% endblock %}
