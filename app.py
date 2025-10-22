@@ -37,4 +37,4 @@ def gallery():
     return render_template('gallery.html', gallery_images=image_urls)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
